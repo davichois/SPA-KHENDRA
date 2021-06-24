@@ -1,4 +1,4 @@
-lenguage: node_js
+language: node_js
 cache:
   directories:
     - ~/.npm
@@ -15,7 +15,7 @@ deploy:
   keep-history: true
   github_token: $GITHUB_TOKEN
   local-dir: dist/
-  target-brach: gh-pages
+  target-branch: gh-pages
   commit_message: "Deploy realease"
   on:
     branch: master
