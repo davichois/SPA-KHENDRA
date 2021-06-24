@@ -1,0 +1,237 @@
+.landing-page {
+  background-color: var(--primary-color);
+  color: white;
+  height: auto;
+  min-height: auto;
+  width: 100%;
+  min-width: 320px;
+}
+
+.header-landing nav {
+  background-color: var(--three-color);
+  height: 60px;
+  width: 100%;
+  min-width: 320px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-landing .logo-landing {
+  align-self: center;
+}
+
+.header-landing .logo-landing h4 {
+  font-size: 1.8rem;
+  margin: 0 20px;
+  font-style: normal;
+  font-weight: 800;
+  letter-spacing: 0.04rem;
+  color: var(--secundary-color);
+}
+
+.header-landing nav a {
+  align-self: center;
+  margin: 0 20px;
+}
+
+.header-landing .hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  min-width: 320px;
+}
+
+.hero .hero-image img {
+  height: 228px;
+  width: 228px;
+  transition: ease-in-out 1s;
+  animation: myAnim 25s ease-in-out 0s infinite alternate-reverse both;
+}
+
+.hero .hero-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.hero .hero-text h1 {
+  font-style: normal;
+  font-weight: 900;
+  font-size: 1.8rem;
+}
+
+.hero .hero-text p {
+  font-style: normal;
+  width: 240px;
+  font-weight: 500;
+  font-size: 1.2rem;
+  line-height: 2.1rem;
+  text-align: start;
+}
+
+.hero .hero-text a {
+  align-self: flex-start;
+  margin-top: 20px;
+}
+
+/* main */
+
+.main-landing .contribuidores-landing {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px 0;
+  margin: 40px 0;
+  background-color: var(--three-color);
+}
+
+.contribuidores-landing .contribuidores-chidren {
+  margin-top: 10px;
+}
+
+.contribuidores-landing .contribuidores-chidren h3 {
+  font-style: normal;
+  font-weight: 800;
+  font-size: 3rem;
+  line-height: 4.2rem;
+  color: var(--off-white);
+}
+
+.contribuidores-landing .contribuidores-chidren p {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 1.3rem;
+  color: var(--off-white);
+}
+
+.main-landing .beneficios-landing {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 40px;
+}
+
+.beneficios-landing .beneficios-image img {
+  height: 228px;
+  width: 177.93px;
+  margin: 10px 0;
+  transition: ease-in-out 1s;
+  animation: myAnim 30s ease-in-out 0s infinite alternate-reverse both;
+}
+
+.beneficios-landing .beneficios-text h4 {
+  width: 240px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.8rem;
+  line-height: 2.7rem;
+}
+
+.beneficios-listado ul li {
+  display: flex;
+  justify-content: flex-start;
+  margin: 15px 0;
+  font-weight: bold;
+}
+
+.beneficios-listado ul .bx {
+  font-size: 1.5rem;
+  color: var(--secundary-color);
+  margin-right: 15px;
+}
+
+.footer-landing {
+  padding: 50px 0;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+}
+
+.footer-landing p {
+  font-size: 1.4rem;
+}
+
+@keyframes myAnim {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70% {
+    transform: translateY(-8px);
+  }
+
+  20%,
+  40%,
+  60% {
+    transform: translateY(8px);
+  }
+
+  80% {
+    transform: translateY(6.4px);
+  }
+
+  90% {
+    transform: translateY(-6.4px);
+  }
+}
+
+@media (min-width: 1160px) {
+  .header-landing .hero {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 550px;
+    min-width: 320px;
+  }
+
+  .hero .hero-image img {
+    height: 620px;
+    width: 620px;
+  }
+
+  .hero .hero-text h1 {
+    font-size: 3.6rem;
+  }
+
+  .hero .hero-text p {
+    font-size: 2rem;
+    width: 450px;
+    margin-top: 10px;
+  }
+
+  .hero .hero-text a {
+    font-size: 1.6rem;
+    font-weight: bold;
+    padding: 15px;
+    font-family: Roboto;
+  }
+
+  .main-landing .beneficios-landing {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .beneficios-landing .beneficios-image img {
+    width: 263px;
+    height: 357px;
+    margin-right: 50px;
+  }
+
+  .beneficios-landing .beneficios-text h4 {
+    font-size: 2.4rem;
+    width: 300px;
+  }
+}
