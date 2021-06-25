@@ -13,7 +13,7 @@ export const saveLocalStorage = (usuario) => {
   }
 };
 
-export const compararUsuarioLocalStorage = (correo, contraseña) => {
+const compararUsuarioLocalStorage = (correo, contraseña) => {
   let ListaUsuarios = JSON.parse(localStorage.getItem("DBUsuarios"));
 
   let usuario = ListaUsuarios.filter((res) => {
@@ -23,7 +23,7 @@ export const compararUsuarioLocalStorage = (correo, contraseña) => {
   return usuario;
 };
 
-export const isAdmin = (correo) => {
+const isAdmin = (correo) => {
   let ListaUsuarios = JSON.parse(localStorage.getItem("DBUsuarios"));
 
   let usuario = ListaUsuarios.filter((res) => {
@@ -31,4 +31,10 @@ export const isAdmin = (correo) => {
   });
 
   return usuario;
+};
+
+export default {
+  saveLocalStorage,
+  compararUsuarioLocalStorage,
+  isAdmin,
 };

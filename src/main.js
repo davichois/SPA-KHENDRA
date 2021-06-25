@@ -1,10 +1,6 @@
 import router from "./routers";
 
 import "./assets/logo.svg";
-import "./assets/hero-student.svg";
-import "./assets/beneficios.svg";
-import "./assets/perfil.png";
-import "./assets/astronauta.svg";
 
 import "./style.css";
 import "./css/landing.css";

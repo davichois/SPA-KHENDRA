@@ -1,8 +1,11 @@
 import header from "../templates/header.html";
+import perfil from "../assets/perfil.png";
 
 const headerView = () => {
   const divElement = document.createElement("div");
   divElement.innerHTML = header;
+
+  divElement.querySelector("#perfil").src = `${perfil}`;
 
   /*
    * Acciones del sistema

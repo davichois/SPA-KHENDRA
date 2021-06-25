@@ -1,6 +1,6 @@
 import register from "../pages/register.html";
 import { Usuario } from "../models/Usuario";
-import { saveLocalStorage } from "../utils/localStorage";
+import saveLocalStorage from "../utils/localStorage";
 
 const registerView = () => {
   const divElement = document.createElement("div");
@@ -50,7 +50,7 @@ const registerView = () => {
         title: "Usuario Registrado Correctamente",
         icon: "success",
       });
-      return window.location.hash = "#/login"
+      return (window.location.hash = "#/login");
     }
   });
 

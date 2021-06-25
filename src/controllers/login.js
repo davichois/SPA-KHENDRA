@@ -1,5 +1,5 @@
 import login from "../pages/login.html";
-import { compararUsuarioLocalStorage } from "../utils/localStorage";
+import compararUsuarioLocalStorage from "../utils/localStorage";
 
 const loginView = () => {
   const divElement = document.createElement("div");
