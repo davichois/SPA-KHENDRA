@@ -1,0 +1,68 @@
+.header-page404 {
+  background-color: var(--primary-color);
+  height: 100vh;
+  max-height: 100vh;
+  width: 100%;
+  min-width: 320px;
+}
+
+.hero-page404 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.hero-image404 img {
+  width: 228px;
+  height: 228px;
+  margin-bottom: 60px;
+  transition: ease-in-out 1s;
+  animation: myAnim 15s ease-in-out 0s infinite alternate-reverse both;
+}
+
+.hero-texto404 {
+  width: 90%;
+}
+
+.texto404 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-texto404 h2 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 4rem;
+  color: var(--font-white);
+}
+
+.hero-texto404 .texto-info {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.5rem;
+  color: var(--off-white);
+}
+
+.hero-texto404 .texto-redireccion {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 1rem;
+  color: var(--font-white);
+}
+
+.redireccion {
+  font-weight: bold;
+  font-size: 1.4rem;
+  color: var(--blue-btn);
+}
+
+@media (min-width: 1160px) {
+  .hero-image404 img {
+    width: 400px;
+    height: 400px;
+  }
+}

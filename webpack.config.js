@@ -7,6 +7,7 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, "dist"),
     filename: "bundle.js",
+    assetModuleFilename: "images/[name][ext]",
   },
   module: {
     rules: [
@@ -33,6 +34,10 @@ module.exports = {
         test: /\.html$/,
         loader: "html-loader",
       },
+      {
+        test: /\.(png|svg|jpg|jpeg|gif)$/i,
+        type: "asset/resource",
+      },
     ],
   },
   plugins: [
@@ -41,7 +46,6 @@ module.exports = {
     }),
     new MiniCssExtractPlugin({
       filename: "css/[name].css",
-      chunkFilename: "css/[id].css",
     }),
   ],
 };

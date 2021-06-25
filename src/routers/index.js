@@ -1,6 +1,8 @@
 import getHash from "../utils/getHash";
 import resolveRoutes from "../utils/resolveRoutes";
 
+import header from "../controllers/header";
+
 import landing from "../controllers/landing";
 import home from "../controllers/home";
 import login from "../controllers/login";

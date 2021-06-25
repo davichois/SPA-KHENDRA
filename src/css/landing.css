@@ -17,19 +17,6 @@
   justify-content: space-between;
 }
 
-.header-landing .logo-landing {
-  align-self: center;
-}
-
-.header-landing .logo-landing h4 {
-  font-size: 1.8rem;
-  margin: 0 20px;
-  font-style: normal;
-  font-weight: 800;
-  letter-spacing: 0.04rem;
-  color: var(--secundary-color);
-}
-
 .header-landing nav a {
   align-self: center;
   margin: 0 20px;
