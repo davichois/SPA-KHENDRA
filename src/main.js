@@ -4,11 +4,12 @@ import "./assets/logo.svg";
 import "./assets/hero-student.svg";
 import "./assets/beneficios.svg";
 import "./assets/perfil.png";
+import "./assets/astronauta.svg";
 
 import "./style.css";
 import "./css/landing.css";
 import "./css/404.css";
-import "./css/login.css"
+import "./css/login.css";
 
 import "./css/header.css";
 
