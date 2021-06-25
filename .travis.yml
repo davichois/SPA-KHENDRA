@@ -16,6 +16,6 @@ deploy:
   github_token: $GITHUB_TOKEN
   local-dir: dist/
   target-branch: gh-pages
-  commit_message: "Deploy realease"
+  commit_message: "Deploy realease 1"
   on:
     branch: master
