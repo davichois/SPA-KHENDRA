@@ -1,6 +1,8 @@
+import { generatorId } from "../utils/generatedID";
+
 import register from "../pages/register.html";
 import { Usuario } from "../models/Usuario";
-import saveLocalStorage from "../utils/localStorage";
+import { saveLocalStorage } from "../utils/localStorage";
 
 const registerView = () => {
   const divElement = document.createElement("div");
@@ -22,6 +24,7 @@ const registerView = () => {
     const contraseña = divElement.querySelector("#contraseña").value.trim();
 
     const usuario = new Usuario({
+      id: generatorId(3),
       nombre,
       apellido,
       correo,
@@ -29,6 +32,7 @@ const registerView = () => {
       nickname,
       fecha_nacimiento,
       contraseña,
+      isAdmin: false,
     });
 
     if (
@@ -38,7 +42,8 @@ const registerView = () => {
         usuario.dni &&
         usuario.nickname &&
         usuario.fecha_nacimiento &&
-        usuario.contraseña) === ""
+        usuario.contraseña &&
+        usuario.isAdmin) === ""
     ) {
       return Swal.fire({
         title: "Complete los campos...",

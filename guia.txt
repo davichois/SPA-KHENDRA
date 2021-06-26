@@ -1,0 +1,22 @@
+Esta es la guia de todo el sistema construido:
+
+Nuestra plataforma web es una SIGLE PAGE APLICATION (SPA), usando javaScript Vanilla, esto significa que nuestra plataforma tiene una sola pagina
+y que se pintara el contenido con puro js, sin embargo estamos usando los plugins de webpack para poder introducir condigo html y css, al final
+lo estamos uniendo y creando una pagina, rapida y sin tiempo de espera de recarga.
+
+Lo que estamos usando es una estructura de carpetas muy detallada:
+    > Carpetas
+     > src : Contiene todo el codigo escrito por nosotros mismos, este codigo no es el que se ejecutara al final
+     > public: La carpeta que contiene el archivo HTML master el cual sera actualizado y pintado cada vez.
+     > node_modules: son los modulos de node_js que estamos usando con npm
+    > Archivos
+     > .gitignore: aca se escribira todo lo que queremos que git ignore cuando subamos el proyecto a github con git.
+     > .nvmrc: aca se encontrara la version de node_js que utilizaremos (estamos usando nvm para manejar las versiones de node_js)
+     > .travis.yml: la configuracion que tenemos para hacer el CI (continuos integration) de todo nuestro proyecto, estamos usando travis.ci para que se encargue de este trabajo.
+     > package-lock.json: este se crea por defecto al iniciar un proyecto con node_js
+     > package.json: este tiene toda la configuracion de npm , estan los scripts y las dependencias de desarrollo y de produccion instaladas.
+     > Readme.md: un pequeño texto(NO ES IMPORTANTE)
+     > webpack.config.js: este es un empaquetador de archivos lo cual nos ayudara a convertir todo lo que se encuentra en src en un solo archivo de su misma extension,
+                          este es la clave de que nuestro programa web sea una SIGLE PAGE APLICATION (SPA)
+
+
