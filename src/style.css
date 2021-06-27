@@ -6,6 +6,13 @@
   --secundary-color: #e94560;
   --three-color: #16213e;
   --input-auth-color: #1f2734;
+  --gradient-img-course: Linear-gradient(
+    88.21deg,
+    #0c1427 1.68%,
+    rgba(12, 20, 39, 0.79) 37.23%,
+    rgba(24, 32, 50, 0.736574) 63.68%,
+    rgba(73, 79, 91, 0.526667) 90.48%
+  );
 }
 
 * {

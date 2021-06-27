@@ -1,7 +1,8 @@
 import { generatorId } from "./generatedID";
 
+//USUARIO
 //Funcion nos ayudara a guardar el objecto usuario en el localStorage, ahi mismo lo exportamos a la funcion usando lo nuevo de JS, este se usa en el register
-export const saveLocalStorage = (usuario) => {
+export const saveLocalStorageUsuario = (usuario) => {
   let ListaUsuarios = [
     {
       id: generatorId(3),
@@ -46,4 +47,18 @@ export const isAdmin = (correo) => {
   });
 
   return usuario;
+};
+
+//CURSO
+export const saveLocalStorageCurso = (curso) => {
+  let ListaCurso = [];
+
+  if (localStorage.getItem("DBCurso") === null) {
+    ListaCurso.push(curso);
+    return localStorage.setItem("DBCurso", JSON.stringify(ListaCurso));
+  } else {
+    ListaCurso = JSON.parse(localStorage.getItem("DBCurso"));
+    ListaCurso.push(curso);
+    return localStorage.setItem("DBCurso", JSON.stringify(ListaCurso));
+  }
 };

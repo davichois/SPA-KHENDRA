@@ -6,7 +6,16 @@
   justify-content: space-between;
   align-items: center;
   background-color: var(--three-color);
-  box-shadow: 0px 0px 10px black;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.218);
+  position: fixed;
+  top: 0;
+  z-index: 5;
+}
+
+.header-content-space::after {
+  display: block;
+  content: "";
+  margin-bottom: 50px;
 }
 
 .header-template .header-perfil {
@@ -67,4 +76,3 @@
 .none {
   display: none;
 }
-

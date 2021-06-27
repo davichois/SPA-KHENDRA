@@ -10,13 +10,11 @@ const headerView = () => {
   /*
    * Acciones del sistema
    */
-
   const arrow_down = divElement.querySelector(".bxs-down-arrow");
 
   /*
    * Eventos del sistema
    */
-
   arrow_down.addEventListener("click", () => {
     const content_option = divElement.querySelector("#options");
     content_option.classList.toggle("none");

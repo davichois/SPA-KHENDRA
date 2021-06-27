@@ -13,7 +13,8 @@ import panel from "../controllers/panel";
 //Rutas instanciadas en objecto lo cual servira para la comparacion
 const routes = {
   "/": landing,
-  "/home": panel,
+  "/home": home,
+  "/panel": panel,
   "/login": login,
   "/register": register,
   "/:id": landing,

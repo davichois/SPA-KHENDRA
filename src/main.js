@@ -8,7 +8,8 @@ import "./style.css";
 import "./css/landing.css";
 import "./css/404.css";
 import "./css/login.css";
-import "./css/panel.css"
+import "./css/panel.css";
+import "./css/home.css";
 //este es el estilo del template header.
 import "./css/header.css";
 

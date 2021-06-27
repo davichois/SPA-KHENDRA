@@ -1,0 +1,86 @@
+.panel-title-page {
+  color: var(--font-white);
+  font-style: normal;
+  font-weight: 900;
+  font-size: 1.8rem;
+  margin: 20px;
+}
+
+.panel-nuevo-curso {
+  padding: 20px;
+}
+
+.btn-nuevocurso {
+  font-style: normal;
+  font-weight: 900;
+  font-size: 1.4rem;
+  border: var(--blue-btn) solid 2px;
+  margin: 10px;
+}
+
+.nuevo-curso-container {
+  width: 70%;
+  height: auto;
+  background-color: var(--three-color);
+  margin-left: 20px;
+  border-radius: 20px;
+}
+
+.form-nuevo-curso {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+}
+
+.form-nuevo-curso .nombre-curso {
+  align-self: center;
+  width: 80%;
+  height: 45px;
+  margin: 5px;
+  background-color: var(--primary-color);
+  border: var(--primary-color) solid 1px;
+}
+
+.input-principal {
+  padding: 15px;
+  border-radius: 10px;
+  outline: none;
+  color: var(--font-white);
+  font-weight: 700;
+}
+
+.form-nuevo-curso .imagen-curso {
+  align-self: center;
+  width: 80%;
+  height: 45px;
+  margin: 5px;
+  background-color: var(--primary-color);
+  border: var(--primary-color) solid 1px;
+}
+
+.form-nuevo-curso textarea {
+  align-self: center;
+  width: 80%;
+  min-width: 70%;
+  max-width: 80%;
+  height: 150px;
+  margin: 5px;
+  background-color: var(--primary-color);
+  border: var(--primary-color) solid 1px;
+}
+
+.form-nuevo-curso .btn-group-curso {
+  align-self: flex-end;
+  margin: 10px;
+  margin-right: 10%;
+}
+
+.btn-group-curso button {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.2rem;
+  border: var(--blue-btn) solid 1px;
+  margin: 5px;
+  text-align: center;
+}
