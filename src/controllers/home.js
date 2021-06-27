@@ -7,11 +7,8 @@ const homeView = () => {
   divElement.innerHTML = home;
 
   //Damos el header template al header del home
-  const header_home = divElement.querySelector(".header-home")
-  header_home.appendChild(header())
-
-  
-  
+  const header_home = divElement.querySelector(".header-home");
+  header_home.appendChild(header());
 
   return divElement;
 };

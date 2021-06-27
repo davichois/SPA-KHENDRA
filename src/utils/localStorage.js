@@ -19,12 +19,10 @@ export const saveLocalStorageUsuario = (usuario) => {
 
   if (localStorage.getItem("DBUsuarios") === null) {
     ListaUsuarios.push(usuario);
-    console.log("guardado");
     return localStorage.setItem("DBUsuarios", JSON.stringify(ListaUsuarios));
   } else {
     ListaUsuarios = JSON.parse(localStorage.getItem("DBUsuarios"));
     ListaUsuarios.push(usuario);
-    console.log("guardado");
     return localStorage.setItem("DBUsuarios", JSON.stringify(ListaUsuarios));
   }
 };
@@ -38,16 +36,31 @@ export const compararUsuarioLocalStorage = (correo, contraseña) => {
 
   return usuario;
 };
-//Funcion nos ayuda a ver si el usuario guardado en el localStorage es Admin o no es, de acuerdo a este valor sse aplicaran algunas cosas por detras, por ekemplo si no es se le quitara opciones masters
-export const isAdmin = (correo) => {
-  let ListaUsuarios = JSON.parse(localStorage.getItem("DBUsuarios"));
 
-  let usuario = ListaUsuarios.filter((res) => {
-    return res.correo === correo && res.contraseña === contraseña;
+//Funcion de guardar al usuario authenticado
+export const saveAuthUser = (usuario) => {
+  let usuarioAuth = [];
+
+  if (localStorage.getItem("DBAuthUser") === null) {
+    usuarioAuth.push(usuario);
+    return localStorage.setItem("DBAuthUser", JSON.stringify(usuarioAuth));
+  } else {
+    usuarioAuth = JSON.parse(localStorage.getItem("DBAuthUser"));
+    usuarioAuth.push(usuario);
+    return localStorage.setItem("DBAuthUser", JSON.stringify(usuarioAuth));
+  }
+};
+
+export const getUserAuth = () => {
+  let ListaAuthUser = JSON.parse(localStorage.getItem("DBAuthUser"));
+
+  let usuarioAuth = ListaAuthUser.find((res) => {
+    return res[0];
   });
 
-  return usuario;
+  return usuarioAuth;
 };
+
 
 //CURSO
 export const saveLocalStorageCurso = (curso) => {
