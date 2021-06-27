@@ -1,6 +1,6 @@
 import header from "../templates/header.html";
 //Traemos la funcion de compararUsuario mandado vs el que existe en el LocalStorage
-import { getUserAuth } from "../utils/localStorage";
+import { getUserAuth, removeItemUserAuth } from "../utils/localStorage";
 
 const headerView = () => {
   const divElement = document.createElement("div");
@@ -9,12 +9,16 @@ const headerView = () => {
   //Etiquetas para acceder al DOM
   const arrow_down = divElement.querySelector(".bxs-down-arrow");
   const creators = divElement.querySelector("#kcreators");
-  // const salir_system = divElement.querySelector("#salir-system");
+  const salir_system = divElement.querySelector("#salir-system");
 
   //Eventos
   arrow_down.addEventListener("click", () => {
     const content_option = divElement.querySelector("#options");
     content_option.classList.toggle("none");
+  });
+
+  salir_system.addEventListener("click", () => {
+    return removeItemUserAuth();
   });
 
   //ADMIN

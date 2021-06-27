@@ -1,11 +1,11 @@
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
-const path = require("path");
+const ruta = require("path");
 
 module.exports = {
   entry: "./src/main.js",
   output: {
-    path: path.resolve(__dirname, "dist"),
+    path: ruta.resolve(__dirname, "dist"),
     filename: "bundle.js",
     assetModuleFilename: "images/[name][ext]",
   },
@@ -42,8 +42,9 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: path.resolve(__dirname, "public", "index.html"),
+      template: ruta.resolve(__dirname, "public", "index.html"),
     }),
+
     new MiniCssExtractPlugin({
       filename: "css/[name].css",
     }),

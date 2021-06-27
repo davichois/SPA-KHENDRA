@@ -4,7 +4,7 @@ import login from "../pages/login.html";
 import {
   saveAuthUser,
   compararUsuarioLocalStorage,
-  isAdmin,
+  removeItemUserAuth
 } from "../utils/localStorage";
 
 //creamos una variable la cual almacenara una funcion a realizar, la funcion es contruir la pagina.
@@ -45,6 +45,7 @@ const loginView = () => {
             icon: "success",
           });
         }
+        removeItemUserAuth()
         saveAuthUser(response);
         return (window.location.hash = "#/home");
       } else {

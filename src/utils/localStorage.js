@@ -51,6 +51,7 @@ export const saveAuthUser = (usuario) => {
   }
 };
 
+//Traer la primera pocision del objecto authenticado
 export const getUserAuth = () => {
   let ListaAuthUser = JSON.parse(localStorage.getItem("DBAuthUser"));
 
@@ -61,6 +62,10 @@ export const getUserAuth = () => {
   return usuarioAuth;
 };
 
+//Remove item de Localstorage
+export const removeItemUserAuth = () => {
+  return window.localStorage.removeItem("DBAuthUser");
+};
 
 //CURSO
 export const saveLocalStorageCurso = (curso) => {
