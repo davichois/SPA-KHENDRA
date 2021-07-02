@@ -93,13 +93,13 @@
 
 .table-curso {
   width: 70%;
+  border-radius: 20px;
 }
 
 .table-curso,
 .table-curso th,
 .table-curso td {
-  border: 1px solid white;
-  border-radius: 10px;
+  border: 2px solid rgba(0, 0, 0, 0.464);
   border-collapse: collapse;
   color: white;
   font-weight: bold;
@@ -110,4 +110,24 @@
 .table-curso td {
   padding: 10px;
   text-align: left;
+}
+
+.table-curso tr:nth-child(even) {
+  background-color: var(--primary-color);
+}
+
+.table-curso tr:nth-child(odd) {
+  background-color: var(--three-color);
+}
+
+.table-curso th {
+  background-color: var(--primary-color);
+}
+
+td i {
+  cursor: pointer;
+  text-align: center;
+  font-size: 1.9rem;
+  margin: 20px;
+  padding: 10px;
 }

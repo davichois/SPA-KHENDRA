@@ -28,14 +28,16 @@
 }
 
 .header-perfil img {
-  width: 25px;
-  height: 25px;
+  width: 30px;
+  height: 30px;
   border-radius: 50%;
+  border: 2px solid var(--primary-color);
 }
 
 .header-perfil .bxs-down-arrow {
   color: var(--font-white);
   cursor: pointer;
+  margin-left: 9px;
 }
 
 /* options header */

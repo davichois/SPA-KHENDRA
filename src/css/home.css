@@ -8,7 +8,7 @@
   height: 100%;
   width: 100%;
   object-fit: cover;
-  z-index: -1;
+  z-index: -2;
   position: absolute;
 }
 
@@ -67,12 +67,17 @@
 .carrusel-home .card-item {
   height: 200px;
   width: 240px;
-  background-color: #101b32;
-  transition: ease-in-out 0.5s;
+  background-color: var(--three-color);
+  transition: ease-in-out 0.3s;
   cursor: pointer;
   margin: 10px;
   border-radius: 10px;
-  box-shadow: 0 1px 10px black;
+  box-shadow: 0 1px 1px black;
+}
+
+.carrusel-home .card-item:hover {
+  background-color: var(--three-color);
+  box-shadow: 0 4px 10px black;
 }
 
 .card-item .card-image {
@@ -88,4 +93,42 @@
   object-fit: cover;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
+}
+
+.card-item .card-info {
+  height: 40%;
+  width: 100%;
+  color: var(--font-white);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.card-item .title {
+  width: 80%;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.card-item .icon {
+  width: 10%;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.bx-time {
+  font-size: 1.1rem;
+}
+
+.footer-home{
+  margin: 50px;
+}
+
+@media (min-width: 1160px) {
+  .textos-hero-home h3 {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 5rem;
+    color: var(--font-white);
+  }
 }

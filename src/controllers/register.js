@@ -1,8 +1,7 @@
 import register from "../pages/register.html";
 
 import { generatorId } from "../utils/generatedID";
-import { Usuario } from "../models/Usuario";
-import { saveLocalStorageUsuario } from "../utils/localStorage";
+import { Usuario, saveUser } from "../models/Usuario";
 
 const registerView = () => {
   const divElement = document.createElement("div");
@@ -50,7 +49,7 @@ const registerView = () => {
         icon: "warning",
       });
     } else {
-      saveLocalStorageUsuario(usuario);
+      saveUser(usuario);
       Swal.fire({
         title: "Usuario Registrado Correctamente",
         icon: "success",

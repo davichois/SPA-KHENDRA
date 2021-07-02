@@ -1,6 +1,6 @@
 import header from "../templates/header.html";
 //Traemos la funcion de compararUsuario mandado vs el que existe en el LocalStorage
-import { getUserAuth, removeItemUserAuth } from "../utils/localStorage";
+import { getUserAuth } from "../models/Usuario";
 
 const headerView = () => {
   const divElement = document.createElement("div");
@@ -18,7 +18,7 @@ const headerView = () => {
   });
 
   salir_system.addEventListener("click", () => {
-    return removeItemUserAuth();
+    window.localStorage.removeItem("DBAuthUser");
   });
 
   //ADMIN

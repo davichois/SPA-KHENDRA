@@ -10,8 +10,11 @@ import "./css/404.css";
 import "./css/login.css";
 import "./css/panel.css";
 import "./css/home.css";
+import "./css/infoCourse.css";
+import "./css/courseContent.css"
 //este es el estilo del template header.
 import "./css/header.css";
+import "./css/footer.css";
 
 //llamamos window.addEventListener para escuchar al evento cargar, osea escuchar cuando recarga la ventana del navegador(refresh)
 window.addEventListener("load", () => {

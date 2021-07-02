@@ -1,0 +1,33 @@
+<main class="course-content">
+    <div class="titulo-imagen">
+        <input type="text" id="titulo-curso" class="input" placeholder="Titulo del Curso">
+        <input type="text" id="imagen-portada" class="archivo" placeholder="Imagen del Curso">
+    </div>
+    <div class="description-curso">
+        <textarea rows="10" cols="50" id="description-curso" placeholder="Descripcion del Curso"></textarea>
+    </div>
+    <div class="creacion-modulos">
+        <button type="submit" class="btn" id="crear-modulo">Nuevo Modulo</button>
+    </div>
+    <div class="modulos-content border-radius">
+        <div class="modulos-children border-radius">
+            <div class="encapsulador">
+                <input type="text" class="input" id="titulo-modulo" placeholder="Titulo del Modulo">
+                <i class='bx bxs-down-arrow' id="down-arrow"></i>
+            </div>
+            <div class="clases-content border-radius">
+                <div class="clases-children border-radius">
+                    <input type="text" class="input" id="titulo-clase" placeholder="Titulo de la Clase">
+                    <input type="file" id="imagen-portada" class="archivo" title="Foto de Portada">
+                </div>
+            </div>
+            <div class="nueva-clase">
+                <button type="submit" class="btn" id="crear-clase">Nueva Clase</button>
+            </div>
+        </div>
+    </div>
+    <div class="btn-aciones">
+        <a href="panel.html"><button type="submit" class="btn" id="guardado-previo">Guardado Previo</button></a>
+        <a href="panel.html"><button type="submit" class="btn" id="guardado">Guardado</button></a>
+    </div>
+</main>

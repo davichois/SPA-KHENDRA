@@ -9,6 +9,8 @@ import login from "../controllers/login";
 import register from "../controllers/register";
 import notFound404 from "../controllers/404";
 import panel from "../controllers/panel";
+import infoCourse from "../controllers/infoCourse";
+import courseContent from "../controllers/courseContent";
 
 //Rutas instanciadas en objecto lo cual servira para la comparacion
 const routes = {
@@ -17,7 +19,8 @@ const routes = {
   "/panel": panel,
   "/login": login,
   "/register": register,
-  "/:id": landing,
+  "/content": courseContent,
+  "/:id": infoCourse,
 };
 
 //traemos la etiqueta root, aca se pintara el contenido; root se encuentra en public/index.html

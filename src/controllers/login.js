@@ -1,11 +1,7 @@
 //Traemos la pagina del login y lo dibujamos desde el DOM
 import login from "../pages/login.html";
-//Traemos la funciones del LocalStorage
-import {
-  saveAuthUser,
-  compararUsuarioLocalStorage,
-  removeItemUserAuth
-} from "../utils/localStorage";
+
+import { comparerUser, saveAuthUser } from "../models/Usuario";
 
 //creamos una variable la cual almacenara una funcion a realizar, la funcion es contruir la pagina.
 const loginView = () => {
@@ -31,26 +27,27 @@ const loginView = () => {
         icon: "warning",
       });
     } else {
-      let response = compararUsuarioLocalStorage(correo, contraseña);
-      let admin = response[0].isAdmin;
+      let response = comparerUser(correo, contraseña);
 
       if (response.length > 0) {
         Swal.fire({
           title: "Bienvenido",
           icon: "success",
         });
+
+        let admin = response[0].isAdmin;
         if (admin === true) {
           Swal.fire({
             title: "Bienvenido señor Administrador",
             icon: "success",
           });
         }
-        removeItemUserAuth()
+        window.localStorage.removeItem("DBAuthUser");
         saveAuthUser(response);
         return (window.location.hash = "#/home");
       } else {
         return Swal.fire({
-          title: "No encontramos tu cuenta",
+          title: "No encontramos tu cuenta Registrate",
           icon: "error",
         });
       }
