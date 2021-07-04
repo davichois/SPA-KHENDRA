@@ -11,6 +11,7 @@ import notFound404 from "../controllers/404";
 import panel from "../controllers/panel";
 import infoCourse from "../controllers/infoCourse";
 import courseContent from "../controllers/courseContent";
+import previusClases from "../controllers/previusClases";
 
 //Rutas instanciadas en objecto lo cual servira para la comparacion
 const routes = {
@@ -21,6 +22,7 @@ const routes = {
   "/register": register,
   "/content": courseContent,
   "/:id": infoCourse,
+  "/clase": previusClases,
 };
 
 //traemos la etiqueta root, aca se pintara el contenido; root se encuentra en public/index.html

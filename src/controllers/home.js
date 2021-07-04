@@ -40,6 +40,11 @@ const homeView = () => {
     `;
   });
 
+  const btn_siguiente = divElement.querySelector("#btn_siguiente");
+  btn_siguiente.addEventListener("click", (e) => {
+    console.log(e);
+  });
+
   return divElement;
 };
 

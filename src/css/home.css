@@ -120,8 +120,21 @@
   font-size: 1.1rem;
 }
 
-.footer-home{
+.footer-home {
   margin: 50px;
+}
+
+.btn_siguiente i {
+  color: var(--font-white);
+  font-size: 3.8rem;
+  position: absolute;
+  right: 20px;
+  top: 40%;
+  cursor: pointer;
+}
+
+.btn_siguiente i:hover {
+  box-shadow: 0px 0px 10px black;
 }
 
 @media (min-width: 1160px) {

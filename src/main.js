@@ -11,7 +11,8 @@ import "./css/login.css";
 import "./css/panel.css";
 import "./css/home.css";
 import "./css/infoCourse.css";
-import "./css/courseContent.css"
+import "./css/courseContent.css";
+import "./css/previusClases.css";
 //este es el estilo del template header.
 import "./css/header.css";
 import "./css/footer.css";
