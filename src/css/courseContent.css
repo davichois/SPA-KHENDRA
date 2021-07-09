@@ -1,0 +1,33 @@
+.course-content {
+  margin: 6px 10px;
+}
+
+.form-curso-principal {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 500px;
+  align-items: stretch;
+}
+
+.inputCourseContent {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--font-white);
+  background-color: var(--three-color);
+  border: var(--primary-color) solid 1px;
+  outline: none;
+  margin: 6px 0px;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.descripcion-curso {
+  height: 100px;
+}
+
+.btn-nuevaClase {
+  margin-top: 10px;
+  border: var(--blue-btn);
+}

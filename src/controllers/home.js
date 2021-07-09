@@ -15,6 +15,7 @@ const homeView = () => {
   const footer_home = divElement.querySelector("#footer_home");
   footer_home.appendChild(footer());
 
+  //Cursos carrusel
   let curso = getCurso() || [];
   const carrusel_home = divElement.querySelector("#carrusel_home");
 
@@ -40,10 +41,33 @@ const homeView = () => {
     `;
   });
 
-  const btn_siguiente = divElement.querySelector("#btn_siguiente");
-  btn_siguiente.addEventListener("click", (e) => {
-    console.log(e);
+
+  //Slider automatico
+  const hero_container_course = divElement.querySelector(
+    "#hero_container_course"
+  );
+  curso.map((curso) => {
+    hero_container_course.innerHTML += `
+    <div class="hero-item-course">
+    <img src="${curso.img_curso}"alt="">
+    <div class="textos-hero-home">
+        <h3>${curso.nombre_curso}</h3>
+        <a href="#/${curso.id}" class="btn">VER AHORA <i class='bx bx-play-circle'></i></a>
+    </div>
+    </div>
+    `;
   });
+
+  let contador = 100;
+  function moveCarrusel() {
+    hero_container_course.style.transform = `translateX(-${contador}%)`;
+    contador += 100;
+
+    if (contador == 900) {
+      contador = 0;
+    }
+  }
+  setInterval(moveCarrusel, 5000);
 
   return divElement;
 };
