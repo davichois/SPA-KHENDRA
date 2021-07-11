@@ -31,7 +31,7 @@ const infoCourseView = () => {
   ).textContent = `${curso[0].descripcion_curso}`;
 
   //evento del bootton incribirse
-  btn_inscribirse.addEventListener("dblclick", () => {
+  btn_inscribirse.addEventListener("click", () => {
     btn_inscribirse.innerHTML = `INSCRITO <i class='bx bx-check'></i>`;
   });
 

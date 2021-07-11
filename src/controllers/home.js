@@ -41,7 +41,6 @@ const homeView = () => {
     `;
   });
 
-
   //Slider automatico
   const hero_container_course = divElement.querySelector(
     "#hero_container_course"
@@ -63,7 +62,7 @@ const homeView = () => {
     hero_container_course.style.transform = `translateX(-${contador}%)`;
     contador += 100;
 
-    if (contador == 900) {
+    if (contador == curso.length * 100) {
       contador = 0;
     }
   }

@@ -1,21 +1,21 @@
 language: node_js
 cache:
   directories:
+    - node_modules
     - ~/.npm
 node_js:
-  - "14.16.1"
+  - "14"
 git:
   depth: 3
 script:
-  - npm run build:prod
+  - yarn build:prod
 deploy:
   provider: pages
-  edge: true
   skip-cleanup: true
   keep-history: true
   github_token: $GITHUB_TOKEN
   local-dir: dist/
   target-branch: gh-pages
-  commit_message: "Deploy realease 1"
+  commit_message: "Deploy KHENDRA"
   on:
     branch: master

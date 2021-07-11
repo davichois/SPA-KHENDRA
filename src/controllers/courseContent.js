@@ -21,12 +21,26 @@ const courseContentView = () => {
     return cursoEncontrado;
   };
 
-  titulo_curso.value=`${curso()[0].nombre_curso}`
-  img_curso.value=`${curso()[0].img_curso}`
-  descripcion_curso.value=`${curso()[0].descripcion_curso}`
-  
+  titulo_curso.value = `${curso()[0].nombre_curso}`;
+  img_curso.value = `${curso()[0].img_curso}`;
+  descripcion_curso.value = `${curso()[0].descripcion_curso}`;
 
-  console.log(curso());
+  const nueva_clase = divElement.querySelector("#nueva_clase");
+  const content_clase = divElement.querySelector(".form-curso-content");
+  nueva_clase.addEventListener("click", () => {
+    let content_input = document.createElement(`div`);
+
+    let inputNombre = document.createElement(`input`);
+    inputNombre.setAttribute("placeholder","Nombre de la clase")
+    let inputDescripcion = document.createElement(`input`);
+    inputDescripcion.setAttribute("placeholder","Descripcion de la clase")
+
+    content_input.appendChild(inputNombre);
+    content_input.appendChild(inputDescripcion);
+
+    content_clase.appendChild(content_input);
+  });
+
   return divElement;
 };
 
