@@ -31,9 +31,9 @@ const courseContentView = () => {
     let content_input = document.createElement(`div`);
 
     let inputNombre = document.createElement(`input`);
-    inputNombre.setAttribute("placeholder","Nombre de la clase")
+    inputNombre.setAttribute("placeholder", "Nombre de la clase");
     let inputDescripcion = document.createElement(`input`);
-    inputDescripcion.setAttribute("placeholder","Descripcion de la clase")
+    inputDescripcion.setAttribute("placeholder", "Descripcion de la clase");
 
     content_input.appendChild(inputNombre);
     content_input.appendChild(inputDescripcion);
