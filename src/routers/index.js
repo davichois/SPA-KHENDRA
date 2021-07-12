@@ -5,13 +5,13 @@ import resolveRoutes from "../utils/resolveRoutes";
 //Paginas usadas
 import landing from "../controllers/landing";
 import home from "../controllers/home";
-import login from "../controllers/login.js";
-import register from "../controllers/register.js";
-import notFound404 from "../controllers/404.js";
-import panel from "../controllers/panel.js";
-import infoCourse from "../controllers/infoCourse.js";
-import courseContent from "../controllers/courseContent.js";
-import previusClases from "../controllers/previusClases.js";
+import login from "../controllers/login";
+import register from "../controllers/register";
+import notFound404 from "../controllers/404";
+import panel from "../controllers/panel";
+import infoCourse from "../controllers/infoCourse";
+import courseContent from "../controllers/courseContent";
+import previusClases from "../controllers/previusClases";
 
 //Rutas instanciadas en objecto lo cual servira para la comparacion
 const routes = {
