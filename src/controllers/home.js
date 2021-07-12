@@ -2,7 +2,7 @@ import home from "../pages/home.html";
 
 import header from "./header.js";
 import footer from "./footer.js";
-import { getCurso } from "../models/Curso.js";
+import { getCurso } from "../helpers/cursoStorage";
 
 const homeView = () => {
   const divElement = document.createElement("div");

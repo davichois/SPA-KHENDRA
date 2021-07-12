@@ -1,7 +1,7 @@
 import { generatorId } from "../utils/generatedID";
 
 // Modelo de Usuario
-export default class Usuario {
+export class Usuario {
   constructor({
     id,
     nombre,

@@ -3,7 +3,7 @@ import infoCourse from "../pages/infoCourse.html";
 import header from "./header.js";
 import footer from "./footer.js";
 import getHash from "../utils/getHash.js";
-import { getCurso } from "../models/Curso.js";
+import { getCurso } from "../helpers/cursoStorage";
 
 const infoCourseView = () => {
   const divElement = document.createElement("div");

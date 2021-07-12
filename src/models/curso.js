@@ -1,5 +1,5 @@
 // Modelo de Curso
-export default class Curso {
+export class Curso {
   constructor({ id, nombre_curso, descripcion_curso, duracion, img_curso }) {
     this.id = id;
     this.nombre_curso = nombre_curso;
