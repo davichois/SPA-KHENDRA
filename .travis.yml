@@ -1,20 +1,27 @@
 language: node_js
-cache:
+cache: # información ya configurada para el proyecto
   directories:
-    - ∼/.npm
-node_js:
-  - "14"
-git:
+    - node_modules
+    - ~/.npm
+node_js: #version
+  - '12'
+git: # número de versiones (git) a guardar
   depth: 3
-script:
+script: #script a ejecutar
   - yarn build
 deploy:
-  provider: pages
-  skip-cleanup: true
-  keep-history: true
+  provider: pages #github pages
+  # configuración del deploy:
+  skip_cleanup: true
+  keep_history: true
+  # creación de un token para la conexión
+  # entre Travis y GitHub:
   github_token: $GITHUB_TOKEN
+  # directorio resultante de la compilación:
+  # xej: /bodndel  /public ...etc
   local-dir: dist/
-  target-branch: gh-pages
-  commit_message: "Deploy KHENDRA"
+  # rama de publicación (sitio) de GitHub:
+  tarjet-branch: gh-pages
+  commit_message: 'Deploy del proyecto travis'
   on:
     branch: master
