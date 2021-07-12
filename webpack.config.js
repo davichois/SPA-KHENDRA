@@ -21,13 +21,8 @@ module.exports = {
         },
       },
       {
-        test: /\.css$/,
-        use: [
-          {
-            loader: MiniCssExtractPlugin.loader,
-          },
-          "css-loader",
-        ],
+        test: /\.css$/i,
+        use: [MiniCssExtractPlugin.loader, "css-loader"],
       },
       {
         test: /\.html$/,
@@ -40,8 +35,6 @@ module.exports = {
       template: ruta.resolve(__dirname, "public", "index.html"),
     }),
 
-    new MiniCssExtractPlugin({
-      filename: "[name].css",
-    }),
+    new MiniCssExtractPlugin(),
   ],
 };
