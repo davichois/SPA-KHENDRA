@@ -1,8 +1,6 @@
 //importamos la funcion router enviada desde routers/index.js y este se ejecutara en este archivo
 import router from "./routers";
 
-import "./assets/logo.svg";
-
 //Aca se encuentran todos nuestros estilos, empezando desde el global hasta los modularizados o de cada pagina.
 import "./style.css";
 import "./css/landing.css";

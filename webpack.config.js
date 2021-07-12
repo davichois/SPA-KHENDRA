@@ -6,7 +6,7 @@ module.exports = {
   entry: "./src/main.js",
   output: {
     path: ruta.resolve(__dirname, "dist"),
-    filename: "bundle.js",
+    filename: "main.js",
   },
   module: {
     rules: [
