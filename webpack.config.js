@@ -7,7 +7,6 @@ module.exports = {
   output: {
     path: ruta.resolve(__dirname, "dist"),
     filename: "bundle.js",
-    assetModuleFilename: "images/[name][ext]",
   },
   module: {
     rules: [
@@ -34,10 +33,6 @@ module.exports = {
         test: /\.html$/,
         loader: "html-loader",
       },
-      {
-        test: /\.(png|svg)$/,
-        type: "asset",
-      },
     ],
   },
   plugins: [
@@ -46,7 +41,7 @@ module.exports = {
     }),
 
     new MiniCssExtractPlugin({
-      filename: "css/[name].css",
+      filename: "[name].css",
     }),
   ],
 };

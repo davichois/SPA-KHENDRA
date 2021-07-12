@@ -4,12 +4,11 @@ cache: # información ya configurada para el proyecto
     - node_modules
     - ~/.npm
 node_js: #version
-  - '14.16.1'
+  - "14.16.1"
 git: # número de versiones (git) a guardar
   depth: 3
 script: #script a ejecutar
-  - npm install
-  - npm run build
+  - yarn build
 deploy:
   provider: pages #github pages
   # configuración del deploy:
@@ -23,6 +22,6 @@ deploy:
   local-dir: dist/
   # rama de publicación (sitio) de GitHub:
   tarjet-branch: gh-pages
-  commit_message: 'Deploy del proyecto travis'
+  commit_message: "Deploy del proyecto travis"
   on:
     branch: master
