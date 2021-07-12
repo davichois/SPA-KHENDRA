@@ -4,7 +4,7 @@ cache: # información ya configurada para el proyecto
     - node_modules
     - ~/.npm
 node_js: #version
-  - '12'
+  - '14.16.1'
 git: # número de versiones (git) a guardar
   depth: 3
 script: #script a ejecutar
