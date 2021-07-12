@@ -1,8 +1,8 @@
 import home from "../pages/home.html";
 
-import header from "./header";
-import footer from "./footer";
-import { getCurso } from "../models/Curso";
+import header from "./header.js";
+import footer from "./footer.js";
+import { getCurso } from "../models/Curso.js";
 
 const homeView = () => {
   const divElement = document.createElement("div");

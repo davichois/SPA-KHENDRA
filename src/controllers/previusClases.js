@@ -1,7 +1,7 @@
 import previusClases from "../pages/previusClases.html";
 
-import header from "./header";
-import footer from "./footer";
+import header from "./header.js";
+import footer from "./footer.js";
 
 const previusClasesView = () => {
   const divElement = document.createElement("div");

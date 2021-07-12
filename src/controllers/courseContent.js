@@ -1,6 +1,6 @@
 import courseContent from "../pages/courseContent.html";
 
-import { getCurso } from "../models/Curso";
+import { getCurso } from "../models/Curso.js";
 
 const courseContentView = () => {
   const divElement = document.createElement("div");

@@ -1,5 +1,5 @@
 import landing from "../pages/landing.html";
-import footer from "./footer";
+import footer from "./footer.js";
 
 const landingView = () => {
   const divElement = document.createElement("div");

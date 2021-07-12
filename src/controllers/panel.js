@@ -1,7 +1,7 @@
 import panel from "../pages/panel.html";
 
-import { generatorId } from "../utils/generatedID";
-import { Curso, saveCurso, getCurso, saveCursoAccion } from "../models/Curso";
+import { generatorId } from "../utils/generatedID.js";
+import { Curso, saveCurso, getCurso, saveCursoAccion } from "../models/Curso.js";
 
 const panelView = () => {
   const divElement = document.createElement("div");

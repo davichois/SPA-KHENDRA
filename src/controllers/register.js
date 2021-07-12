@@ -1,7 +1,7 @@
 import register from "../pages/register.html";
 
-import { generatorId } from "../utils/generatedID";
-import { Usuario, saveUser } from "../models/Usuario";
+import { generatorId } from "../utils/generatedID.js";
+import { Usuario, saveUser } from "../models/Usuario.js";
 
 const registerView = () => {
   const divElement = document.createElement("div");

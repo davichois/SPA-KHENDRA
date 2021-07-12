@@ -1,7 +1,7 @@
 //Traemos la pagina del login y lo dibujamos desde el DOM
 import login from "../pages/login.html";
 
-import { comparerUser, saveAuthUser } from "../models/Usuario";
+import { comparerUser, saveAuthUser } from "../models/Usuario.js";
 
 //creamos una variable la cual almacenara una funcion a realizar, la funcion es contruir la pagina.
 const loginView = () => {
