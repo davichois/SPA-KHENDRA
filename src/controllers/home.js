@@ -1,7 +1,7 @@
 import home from "../pages/home.html";
 
-import header from "./header.js";
-import footer from "./footer.js";
+import header from "./header";
+import footer from "./footer";
 import { getCurso } from "../helpers/cursoStorage";
 
 const homeView = () => {

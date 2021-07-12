@@ -5,7 +5,7 @@ import {
   getCurso,
   saveCurso,
   saveCursoAccion,
-} from "../helpers/cursoStorage.js";
+} from "../helpers/cursoStorage";
 import { Curso } from "../models/Curso";
 
 const panelView = () => {

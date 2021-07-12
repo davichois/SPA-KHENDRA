@@ -1,8 +1,8 @@
 import infoCourse from "../pages/infoCourse.html";
 
-import header from "./header.js";
-import footer from "./footer.js";
-import getHash from "../utils/getHash.js";
+import header from "./header";
+import footer from "./footer";
+import getHash from "../utils/getHash";
 import { getCurso } from "../helpers/cursoStorage";
 
 const infoCourseView = () => {
