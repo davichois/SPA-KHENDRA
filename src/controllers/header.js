@@ -1,6 +1,6 @@
 import header from "../templates/header.html";
 //Traemos la funcion de compararUsuario mandado vs el que existe en el LocalStorage
-import { getUserAuth } from "../models/Usuario.js";
+import { getUserAuth } from "../helpers/usuarioStorage";
 
 const headerView = () => {
   const divElement = document.createElement("div");
