@@ -15,6 +15,10 @@ import "./css/previusClases.css";
 import "./css/header.css";
 import "./css/footer.css";
 
+import "./models/Curso.js";
+import "./models/Clase.js";
+import "./models/Usuario.js";
+
 //llamamos window.addEventListener para escuchar al evento cargar, osea escuchar cuando recarga la ventana del navegador(refresh)
 window.addEventListener("load", () => {
   //ejecutamos nuestra funcion router cada vez que se recarga el navegador
