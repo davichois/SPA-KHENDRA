@@ -1,10 +1,6 @@
 //importamos la funcion router enviada desde routers/index.js y este se ejecutara en este archivo
 import router from "./routers/index.js";
 
-import "./models/Curso";
-import "./models/Clase";
-import "./models/Usuario";
-
 //Aca se encuentran todos nuestros estilos, empezando desde el global hasta los modularizados o de cada pagina.
 import "./style.css";
 import "./css/landing.css";
