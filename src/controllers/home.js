@@ -3,6 +3,7 @@ import home from "../pages/home.html";
 import header from "./header";
 import footer from "./footer";
 import { getCurso } from "../helpers/cursoStorage";
+import { raiz } from "../utils/constans";
 
 const homeView = () => {
   const divElement = document.createElement("div");
@@ -21,7 +22,7 @@ const homeView = () => {
 
   curso.map((curso) => {
     carrusel_home.innerHTML += `
-    <a href="/#/${curso.id}">
+    <a href="${raiz}#/${curso.id}">
     <div class="card-item">
       <div class="card-image">
           <img src="${curso.img_curso}"
@@ -66,7 +67,10 @@ const homeView = () => {
       contador = 0;
     }
   }
-  setInterval(moveCarrusel, 5000);
+
+  if (curso.length > 1) {
+    setInterval(moveCarrusel, 5000);
+  }
 
   return divElement;
 };

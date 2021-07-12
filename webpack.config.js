@@ -3,10 +3,11 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const ruta = require("path");
 
 module.exports = {
-  entry: "./src/main.js",
+  entry: ruta.resolve(__dirname, "src", "main.js"),
   output: {
-    path: ruta.resolve(__dirname, "dist"),
-    filename: "main.js",
+    path: ruta.resolve("dist"),
+    filename: "main.[hash].js",
+    publicPath: "https://davichois.github.io/SPA-KHENDRA/",
   },
   resolve: {
     extensions: [".js"],
@@ -14,7 +15,7 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.js$/i,
+        test: /\.js$/,
         exclude: /node_modules/,
         use: {
           loader: "babel-loader",
@@ -24,11 +25,11 @@ module.exports = {
         },
       },
       {
-        test: /\.css$/i,
+        test: /\.css$/,
         use: [MiniCssExtractPlugin.loader, "css-loader"],
       },
       {
-        test: /\.html$/i,
+        test: /\.html$/,
         loader: "html-loader",
       },
     ],
