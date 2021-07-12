@@ -8,6 +8,9 @@ module.exports = {
     path: ruta.resolve(__dirname, "dist"),
     filename: "main.js",
   },
+  resolve: {
+    extensions: ".js",
+  },
   module: {
     rules: [
       {
