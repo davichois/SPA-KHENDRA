@@ -3,7 +3,7 @@ import home from "../pages/home.html";
 import header from "./header";
 import footer from "./footer";
 import { getCurso } from "../helpers/cursoStorage";
-import { raiz } from "../utils/constans";
+import { raiz } from "../utils/contants";
 
 const homeView = () => {
   const divElement = document.createElement("div");
@@ -20,9 +20,10 @@ const homeView = () => {
   let curso = getCurso() || [];
   const carrusel_home = divElement.querySelector("#carrusel_home");
 
+  //ACA VA RAIZ
   curso.map((curso) => {
     carrusel_home.innerHTML += `
-    <a href="${raiz}#/${curso.id}">
+    <a href="${raiz}/#/${curso.id}">
     <div class="card-item">
       <div class="card-image">
           <img src="${curso.img_curso}"

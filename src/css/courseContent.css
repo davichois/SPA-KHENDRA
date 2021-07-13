@@ -39,3 +39,29 @@
   background-color: var(--three-color);
   border-radius: 5px;
 }
+
+.content_input {
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: var(--primary-color);
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.btn-group-clases {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 50px;
+}
+
+.btn-group-clases button {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.2rem;
+  border: var(--blue-btn) solid 1px;
+  margin: 5px;
+  text-align: center;
+}

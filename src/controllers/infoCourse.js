@@ -29,6 +29,10 @@ const infoCourseView = () => {
   divElement.querySelector(
     "#description_course"
   ).textContent = `${curso[0].descripcion_curso}`;
+  divElement.querySelector("#foto_perfil").src = `${curso[0].img_docente}`;
+  divElement.querySelector(
+    "#nombre_docente"
+  ).textContent = `${curso[0].nombre_docente}`;
 
   //evento del bootton incribirse
   btn_inscribirse.addEventListener("click", () => {

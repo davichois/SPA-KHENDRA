@@ -7,7 +7,7 @@ module.exports = {
   output: {
     path: ruta.resolve("dist"),
     filename: "main.[hash].js",
-    publicPath: "https://davichois.github.io/SPA-KHENDRA/",
+    publicPath: "/SPA-KHENDRA/",
   },
   resolve: {
     extensions: [".js"],

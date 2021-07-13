@@ -39,7 +39,7 @@ export const saveAuthUser = (usuario) => {
 };
 
 export const comparerUser = (correo, contraseña) => {
-  let ListaUsuarios = JSON.parse(localStorage.getItem("DBUsuarios"));
+  let ListaUsuarios = JSON.parse(localStorage.getItem("DBUsuarios")) || [];
 
   let usuario = ListaUsuarios.filter((res) => {
     return res.correo === correo && res.contraseña === contraseña;

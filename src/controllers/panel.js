@@ -1,12 +1,7 @@
 import panel from "../pages/panel.html";
 
 import { generatorId } from "../utils/generatedID";
-import {
-  getCurso,
-  saveCurso,
-  saveCursoAccion,
-} from "../helpers/cursoStorage";
-
+import { getCurso, saveCurso, saveCursoAccion } from "../helpers/cursoStorage";
 
 import { Curso } from "../models/Curso";
 
@@ -37,6 +32,12 @@ const panelView = () => {
     const descripcion_curso = divElement
       .querySelector("#descripcion_curso")
       .value.trim();
+    const img_docente = divElement
+      .querySelector("#imagen_docente")
+      .value.trim();
+    const nombre_docente = divElement
+      .querySelector("#nombre_docente")
+      .value.trim();
 
     const curso = new Curso({
       id: generatorId(3).toLowerCase(),
@@ -44,6 +45,8 @@ const panelView = () => {
       descripcion_curso,
       img_curso,
       duracion: "6h",
+      img_docente,
+      nombre_docente,
     });
 
     if (
