@@ -27,3 +27,14 @@ export const getCurso = (id) => {
 export const saveCursoAccion = (cursosArray) => {
   localStorage.setItem("DBCurso", JSON.stringify(cursosArray));
 };
+
+export const saveDataCurso = (data) => {
+  let ListaCurso = data;
+
+  if (localStorage.getItem("DBCurso") === null) {
+    return localStorage.setItem("DBCurso", JSON.stringify(ListaCurso));
+  } else {
+    ListaCurso = JSON.parse(localStorage.getItem("DBCurso"));
+    return localStorage.setItem("DBCurso", JSON.stringify(ListaCurso));
+  }
+};

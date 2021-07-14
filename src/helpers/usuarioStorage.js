@@ -1,19 +1,7 @@
 import { generatorId } from "../utils/generatedID";
 
 export const saveUser = (usuario) => {
-  let ListaUsuarios = [
-    {
-      id: generatorId(3),
-      nombre: "khendra",
-      apellido: "khendra",
-      correo: "khendra@gmail.com",
-      dni: "30482145",
-      nickname: "khendra",
-      contraseña: "admin123",
-      fecha_nacimiento: "29/01/2002",
-      isAdmin: true,
-    },
-  ];
+  let ListaUsuarios = [];
 
   if (localStorage.getItem("DBUsuarios") === null) {
     ListaUsuarios.push(usuario);
@@ -56,4 +44,15 @@ export const getUserAuth = () => {
   });
 
   return usuarioAuth;
+};
+
+export const saveDataUser = (data) => {
+  let ListaUsuarios = data;
+
+  if (localStorage.getItem("DBUsuarios") === null) {
+    return localStorage.setItem("DBUsuarios", JSON.stringify(ListaUsuarios));
+  } else {
+    ListaUsuarios = JSON.parse(localStorage.getItem("DBUsuarios"));
+    return localStorage.setItem("DBUsuarios", JSON.stringify(ListaUsuarios));
+  }
 };

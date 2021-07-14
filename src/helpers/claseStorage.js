@@ -31,3 +31,14 @@ export const getClaseOrCourse = (id_course) => {
   });
   return clase;
 };
+
+export const saveDataClases = (data) => {
+  let ListaClase = data;
+
+  if (localStorage.getItem("DBClase") === null) {
+    return localStorage.setItem("DBClase", JSON.stringify(ListaClase));
+  } else {
+    ListaClase = JSON.parse(localStorage.getItem("DBClase"));
+    return localStorage.setItem("DBClase", JSON.stringify(ListaClase));
+  }
+};
