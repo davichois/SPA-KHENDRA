@@ -37,6 +37,9 @@ const editCourseView = () => {
     let titulo = titulo_curso.value.trim();
     let url = img_curso.value.trim();
     let descripcion = descripcion_curso.value.trim();
+    let cursoID = getCurso(idCourse);
+    let docente_nombre = cursoID[0].nombre_docente;
+    let foto_docente = cursoID[0].img_docente;
 
     let indexArray;
     cursosData.map((elemento, index) => {
@@ -48,6 +51,8 @@ const editCourseView = () => {
           nombre_curso: titulo,
           descripcion_curso: descripcion,
           img_curso: url,
+          nombre_docente: docente_nombre,
+          img_docente: foto_docente,
         });
         saveCursoAccion(cursosData);
       } else {
