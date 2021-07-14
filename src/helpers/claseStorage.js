@@ -23,3 +23,11 @@ export const getClaseOrClases = (id) => {
     return ListaClase;
   }
 };
+
+export const getClaseOrCourse = (id_course) => {
+  let ListaClase = JSON.parse(localStorage.getItem("DBClase")) || [];
+  let clase = ListaClase.filter((res) => {
+    return id_course === res.curso_id;
+  });
+  return clase;
+};

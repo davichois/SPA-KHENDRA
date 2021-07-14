@@ -20,7 +20,6 @@ const homeView = () => {
   let curso = getCurso() || [];
   const carrusel_home = divElement.querySelector("#carrusel_home");
 
-  //ACA VA RAIZ
   curso.map((curso) => {
     carrusel_home.innerHTML += `
     <a href="${raiz}/#/${curso.id}">

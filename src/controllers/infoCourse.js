@@ -4,7 +4,7 @@ import header from "./header";
 import footer from "./footer";
 import getHash from "../utils/getHash";
 import { getCurso } from "../helpers/cursoStorage";
-import { getClaseOrClases } from "../helpers/claseStorage";
+import { getClaseOrCourse } from "../helpers/claseStorage";
 
 const infoCourseView = () => {
   const divElement = document.createElement("div");
@@ -13,7 +13,7 @@ const infoCourseView = () => {
   const btn_inscribirse = divElement.querySelector("#btn-inscribirse");
   const id = getHash();
 
-  const clases = getClaseOrClases() || [];
+  const clases = getClaseOrCourse(id) || [];
 
   //Damos el header template al header del home
   const header_home = divElement.querySelector(".header-home");
