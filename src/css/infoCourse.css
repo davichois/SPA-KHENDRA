@@ -91,6 +91,7 @@
   color: var(--off-white);
   font-size: 1.2rem;
   margin-left: 30px;
+  font-weight: bold;
 }
 
 .content-clases li i {

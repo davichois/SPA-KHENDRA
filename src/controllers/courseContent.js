@@ -3,17 +3,15 @@ import courseContent from "../pages/courseContent.html";
 import { getCurso } from "../helpers/cursoStorage";
 import { Clase } from "../models/Clase";
 import { generatorId } from "../utils/generatedID";
+import { saveClases } from "../helpers/claseStorage";
 
 const courseContentView = () => {
   const divElement = document.createElement("div");
   divElement.innerHTML = courseContent;
 
   const titulo_curso = divElement.querySelector("#titulo_curso");
-  titulo_curso.setAttribute("readonly", "");
   const img_curso = divElement.querySelector("#img_curso");
-  img_curso.setAttribute("readonly", "");
   const descripcion_curso = divElement.querySelector("#desccripcion_curso");
-  descripcion_curso.setAttribute("readonly", "");
 
   //Encontrando curso
   const curso = () => {
@@ -99,7 +97,11 @@ const courseContentView = () => {
           url,
           curso_id,
         });
-        console.log(clase);
+        saveClases(clase);
+        Swal.fire({
+          title: "Clase guardada correctamente",
+          icon: "success",
+        });
       }
     }
   });

@@ -4,6 +4,7 @@ import header from "./header";
 import footer from "./footer";
 import getHash from "../utils/getHash";
 import { getCurso } from "../helpers/cursoStorage";
+import { getClaseOrClases } from "../helpers/claseStorage";
 
 const infoCourseView = () => {
   const divElement = document.createElement("div");
@@ -11,6 +12,8 @@ const infoCourseView = () => {
 
   const btn_inscribirse = divElement.querySelector("#btn-inscribirse");
   const id = getHash();
+
+  const clases = getClaseOrClases() || [];
 
   //Damos el header template al header del home
   const header_home = divElement.querySelector(".header-home");
@@ -37,6 +40,16 @@ const infoCourseView = () => {
   //evento del bootton incribirse
   btn_inscribirse.addEventListener("click", () => {
     btn_inscribirse.innerHTML = `INSCRITO <i class='bx bx-check'></i>`;
+  });
+
+  //crear contenido de clase
+  const content_clase = divElement.querySelector(".content-clases");
+  clases.map((clase) => {
+    content_clase.innerHTML += `
+    <a href="#/clase/${clase.id_clase}">
+      <li><span>${clase.nombre_clase}</span><i class='bx bx-play-circle'></i></li>
+    </a>
+    `;
   });
 
   return divElement;
