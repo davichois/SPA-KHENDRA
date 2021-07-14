@@ -55,6 +55,10 @@ const editCourseView = () => {
           img_docente: foto_docente,
         });
         saveCursoAccion(cursosData);
+        Swal.fire({
+          title: "Curso editado correctamente",
+          icon: "success",
+        });
       } else {
         return;
       }
