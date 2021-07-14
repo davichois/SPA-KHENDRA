@@ -16,6 +16,7 @@ import panel from "../controllers/panel";
 import infoCourse from "../controllers/infoCourse";
 import courseContent from "../controllers/courseContent";
 import previusClases from "../controllers/previusClases";
+import editCourse from "../controllers/editCourse";
 
 //Rutas instanciadas en objecto lo cual servira para la comparacion
 const routes = {
@@ -27,6 +28,7 @@ const routes = {
   "/content": courseContent,
   "/:id": infoCourse,
   "/clase": previusClases,
+  "/edit": editCourse,
 };
 
 //traemos la etiqueta root, aca se pintara el contenido; root se encuentra en public/index.html
@@ -60,7 +62,6 @@ function DataIndexada() {
       isAdmin: true,
     },
   ];
-
   saveDataUser(dataUsuario);
 
   const dataCurso = [

@@ -104,7 +104,7 @@ const panelView = () => {
       window.location.hash = `#/content/${e.path[3].childNodes[0].childNodes[1].innerHTML}`;
     } else if (e.target.title === "edit") {
       console.log("edit");
-      window.location.hash = `#/content/${e.path[3].childNodes[0].childNodes[1].innerHTML}`;
+      window.location.hash = `#/edit/${e.path[3].childNodes[0].childNodes[1].innerHTML}`;
     } else if (e.target.title === "delete") {
       EliminarDB(e.path[3].childNodes[0].childNodes[1].innerHTML);
     }
