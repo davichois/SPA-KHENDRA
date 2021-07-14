@@ -804,6 +804,7 @@ td i {
   color: var(--off-white);
   font-size: 1.2rem;
   margin-left: 30px;
+  font-weight: bold;
 }
 
 .content-clases li i {
@@ -911,13 +912,14 @@ td i {
   height: auto;
   width: 100%;
   padding: 20px;
+  min-width: 420px;
 }
 .video-clase {
   height: 100vh;
   width: 100%;
 }
 .video-clase .video {
-  height: 80%;
+  height: 85%;
   width: 100%;
   text-align: center;
   display: flex;
@@ -930,13 +932,13 @@ td i {
   width: 95%;
   min-width: 400px;
   max-width: 1400px;
-  border-radius: 15px;
+  border-radius: 5px;
 }
 
 .texto-clase {
   height: 5%;
   width: 100%;
-  padding: 40px;
+  padding: 30px;
 }
 
 .texto-clase h4 {
@@ -954,7 +956,15 @@ td i {
 }
 
 #footer_previusClases {
-  margin-top: 30px;
+  padding: 50px 0;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  min-width: 420px;
+}
+
+#footer_previusClases p {
+  font-size: 1.4rem;
 }
 
 .header-template {
