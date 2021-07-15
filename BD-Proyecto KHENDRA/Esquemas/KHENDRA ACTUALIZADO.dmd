@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="KHENDRA ACTUALIZADO" id="A46865DD-2566-9664-582F-A43AD824C92A" version="3.5">
+<createdBy>david</createdBy>
+<createdTime>2021-06-09 14:07:09 UTC</createdTime>
+<ownerDesignName>khedra</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>A46865DD-2566-9664-582F-A43AD824C92A</designId>
+</OSDM_Design>
