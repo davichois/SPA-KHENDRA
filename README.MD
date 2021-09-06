@@ -1,7 +1,4 @@
 # Proyecto Integrador (KHENDRA)
 
-## Integrantes :
-- @davidprada
-- @helenoblitas
-- @katherinmas
-- @gerald
+### David Prada Linarez
+- @davichois
